@@ -1,0 +1,25 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"    
+    i18n_domain="collective.lastupdated">
+
+
+  
+  <!-- -*- extra stuff goes here -*- -->
+
+  <include package=".browser" />  
+
+  <genericsetup:registerProfile
+       name="default"
+       title="Viewlet To Display Lastupdated below content"
+       directory="profiles/default"
+       description='Extension profile for the collective.lastupdated'
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+
+
+
+</configure>

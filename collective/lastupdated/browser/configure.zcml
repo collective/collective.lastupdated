@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:kss="http://namespaces.zope.org/kss"
+    i18n_domain="plonetheme.onegovboris">
+
+
+ 
+   <!-- Optional portlets used in other themes -->
+
+
+    <browser:viewlet
+        name="collective.lastupdated"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+        class=".viewlets.LastUpdatedViewlet"
+        permission="zope2.View"
+        layer="collective.lastupdated.interfaces.ICollectiveLastupdatedLayer"
+        />
+
+</configure>

@@ -1,0 +1,4 @@
+<layers>
+    <layer name="collective.carousel"
+           interface="collective.lastupdated.interfaces.ICollectiveLastupdatedLayer" />
+</layers>
