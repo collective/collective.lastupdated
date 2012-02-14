@@ -15,6 +15,16 @@
         manager="plone.app.layout.viewlets.interfaces.IBelowContent"
         class=".viewlets.LastUpdatedViewlet"
         permission="zope2.View"
+	for="Products.ATContentTypes.interfaces.document.IATDocument"
+        layer="collective.lastupdated.interfaces.ICollectiveLastupdatedLayer"
+        />
+
+    <browser:viewlet
+        name="collective.lastupdated"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContent"
+        class=".viewlets.LastUpdatedViewlet"
+        permission="zope2.View"
+	for="Products.ATContentTypes.interfaces.file.IATFile"
         layer="collective.lastupdated.interfaces.ICollectiveLastupdatedLayer"
         />
 
